@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('layouts.admin-index');
+// });
+
+
+//Task Management login part
+Route::get('login',[AdminController::class,'login'])->name('login');
+
+
+Route::get('admin-index',[AdminController::class,'admin_index'])->name('admin.index');
