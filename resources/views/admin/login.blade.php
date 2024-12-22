@@ -63,7 +63,7 @@
                     <img src="{{ asset('assets/img/logo-horizontal.png') }}" class="img-fluid" alt="task manager">
                 </div>
                 <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
+                    <form method="POST" action="#">
                         @csrf
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
